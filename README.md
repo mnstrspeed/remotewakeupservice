@@ -1,4 +1,4 @@
-Remote Wake-Up Service lets you set up a link that triggers the alarm on your Android phone from anywhere in the world.
+Remote Wake-Up Service lets you set up a link that triggers the alarm on your Android phone from anywhere in the world. Includes some pretty useless features like a map that shows from where in the world your link was visited (based on MaxMind's GeoIP database).
 
 Installation
 ------------
