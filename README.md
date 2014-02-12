@@ -3,6 +3,12 @@ Remote Wake-Up Service lets you set up a link that triggers the alarm on your An
 Installation
 ------------
 1. Set up an Apache web server with mod_rewrite
+```
+    a2enmod rewrite
+    vi /etc/apache2/sites-available/default
+      :%s/AllowOverride None/AllowOverride All/g
+    service apache2 restart
+```
 2. Import the contents of `www`
 3. Change the IP addresses in `android/src/nl/tomsanders/wakeupservice/StatusCheckReceiver.java` (ideally this will be integrated in the GUI some day, but you know how that goes) and compile
 
