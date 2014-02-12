@@ -1,0 +1,9 @@
+# a2enmod rewrite
+# nano /etc/apache2/sites-available/default
+#	AllowOverride All
+# service apache2 restart
+
+RewriteEngine On
+RewriteBase	/
+RewriteRule	^g/(.+)$		redirect.php?g=$1	[L]
+RewriteRule	^[a-z0-9]+/(.+)$	redirect.php?r=$1	[NC,L]
